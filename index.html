@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Expence</title>
+  </head>
+  <body>
+    <nav>
+      <div class="left">
+        <i class="ri-menu-fill" id="menu"></i>
+      </div>
+      <div class="right">
+        <a href="">
+          USER PHOTO
+          <i class="ri-account-circle-line"></i>
+        </a>
+        <a href="">USERNAME</a>
+        <button class="btn">LogOut</button><button class="btn">Sign Up</button>
+      </div>
+    </nav>
+    <div class="slidebar display">
+      <div class="optns">
+        <div class="list"><i class="ri-home-4-line"></i> Home</div>
+        <div class="list"><i class="ri-bar-chart-box-line"></i> Stats</div>
+        <div class="list"><i class="ri-folder-info-line"></i> About</div>
+        <div class="list"><i class="ri-file-3-fill"></i> Instruction</div>
+        <div class="list"><i class="ri-contacts-fill"></i> Contacts</div>
+      </div>
+
+      <i class="ri-close-line close-btn"></i>
+    </div>
+    <div class="content">
+      <div class="left-content">
+        <div class="card1">
+          <div class="card-content">
+            <h2>Current Balance :</h2>
+            <p id="Current-balance">...</p>
+          </div>
+          <div class="image">
+            <img src="images/illustration-people-with-money.png" alt="Image" />
+          </div>
+        </div>
+
+        <div class="income">
+          <form class="box">
+            <h2>EARNING</h2>
+            <div class="left"></div>
+            <label for="Earning">Earning Amount:</label>
+            <input
+              type="number"
+              name="earning"
+              class="amount"
+              id="earning-amount"
+              placeholder="enter the amount "
+            />
+            <label for="type">Type:</label>
+            <select id="earning-type" aria-placeholder="select">
+              <option value="Salary">Salary</option>
+              <option value="side hustle">Side Hustle</option>
+            </select>
+
+            <label for="date">Date:</label>
+            <input type="date" id="earning-date" />
+            <button class="btn submit" id="sbmtbtn1">Submit</button>
+            <img src="images/indian-rupee-investment-concept.png" alt="" />
+          </form>
+          <form class="box">
+            <h2>EXPENCES</h2>
+            <label for="Earning">Expence Amount:</label>
+            <input
+              type="number"
+              name="earning"
+              class="amount"
+              id="expence-amount"
+              placeholder="enter the amount "
+            />
+            <label for="type">Type:</label>
+            <select id="expence-type">
+              <option value="Food">Food</option>
+              <option value="Education">Education</option>
+              <option value="Acomodation">Acomodation</option>
+              <option value="Grocceries">Grocceries</option>
+            </select>
+
+            <label for="date">Date:</label>
+            <input type="date" id="expence-date" />
+            <button class="btn submit" id="sbmtBtn2">Submit</button>
+            <img src="images/indian-rupee-money-bag.png" alt="" />
+          </form>
+        </div>
+      </div>
+      <div class="right-content">
+        <div class="movements">
+          <h1 class="tran-heading">Transaction History</h1>
+          <!-- <div class="movement-row">
+            <div class="movement-type-earning">Earning</div>
+            <div class="movement-date">Today</div>
+            <div class="movement-tags">Salary</div>
+            <div class="movement-value">2000</div>
+          </div>
+          <div class="movement-row">
+            <div class="movement-type-expence">Expence</div>
+            <div class="movement-date">Today</div>
+            <div class="movement-tags">Food</div>
+            <div class="movement-value">400</div>
+          </div>
+          <div class="movement-row">
+            <div class="movement-type-earning">Earning</div>
+            <div class="movement-date">Today</div>
+            <div class="movement-tags">Salary</div>
+            <div class="movement-value">2000</div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
