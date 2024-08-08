@@ -22,14 +22,18 @@
           USER PHOTO
           <i class="ri-account-circle-line"></i>
         </a>
-        <a href="">USERNAME</a>
-        <button class="btn">LogOut</button><button class="btn">Sign Up</button>
+        <a href="">USERNAME:-(Arnab)</a>
+        <button class="btn forStats">Stats</button>
+        <button class="btn homebtn">Home</button
+        ><button class="btn reset">Reset Data</button>
       </div>
     </nav>
     <div class="slidebar display">
       <div class="optns">
-        <div class="list"><i class="ri-home-4-line"></i> Home</div>
-        <div class="list"><i class="ri-bar-chart-box-line"></i> Stats</div>
+        <div class="list homebtn"><i class="ri-home-4-line"></i> Home</div>
+        <div class="list forStats">
+          <i class="ri-bar-chart-box-line"></i> Stats
+        </div>
         <div class="list"><i class="ri-folder-info-line"></i> About</div>
         <div class="list"><i class="ri-file-3-fill"></i> Instruction</div>
         <div class="list"><i class="ri-contacts-fill"></i> Contacts</div>
@@ -121,6 +125,22 @@
         </div>
       </div>
     </div>
+    <div class="content2 invisible">
+      <div class="mychart">
+        <h1 class="labeldata">Expence vs Income</h1>
+
+        <canvas id="myChart"><p>NULL</p></canvas>
+      </div>
+      <div class="mychart">
+        <h1 class="labeldata">Expence-Distribution</h1>
+        <canvas id="myChart2"><p>NULL</p></canvas>
+      </div>
+      <div class="mychart">
+        <h1 class="labeldata">Income-Distribution</h1>
+        <canvas id="myChart3"><p>NULL</p></canvas>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

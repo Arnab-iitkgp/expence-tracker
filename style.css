@@ -64,7 +64,7 @@ nav .right a {
   left: 0%;
 
   top: 0%;
-  z-index: 9;
+  z-index: 99;
 
   transition: 0.5s;
 
@@ -101,6 +101,7 @@ nav .right a {
   margin-top: 10vh;
   font-size: 3rem;
   gap: 2rem;
+  cursor: pointer;
 }
 .optns .list {
   color: white;
@@ -210,7 +211,7 @@ label {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 85vh;
+  height: 60vh;
   flex-wrap: wrap;
   transition: filter 0.8s;
 }
@@ -225,15 +226,16 @@ label {
 
 .movements {
   margin: 20px;
+  height: 90%;
   /* background-color: #efe6e6d8; */
   background: linear-gradient(
     to right,
     rgb(6, 42, 49),
     rgba(35, 56, 123, 0.99)
   );
+  /* height: 100%; */
   border-radius: 1rem;
   overflow: scroll; /* check this*/
-  height: 100%;
 }
 .movement-row {
   padding: 2.25rem 4rem;
@@ -292,4 +294,42 @@ label {
 .movement-value {
   font-size: 1.8rem;
   color: white;
+}
+
+.invisible {
+  opacity: 0;
+}
+.content2 {
+  position: absolute;
+  top: 10vh;
+  height: 100vh;
+  /* background-color: red; */
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  z-index: -2;
+}
+.mychart {
+  padding: 40px;
+  /* background-color: yello; */
+  /* width: 50vw; */
+  height: 500px;
+  /* background: linear-gradient(135deg, rgb(73, 150, 147), rgb(47, 129, 211)); */
+}
+.msg {
+  color: antiquewhite;
+  text-align: center;
+  margin-left: 20%;
+}
+.labeldata {
+  color: antiquewhite;
+  /* position: absolute; */
+  position: relative;
+  left: 20%;
+  margin-bottom: 10%;
+  margin-top: 10%;
+  /* background-color: red; */
+  transform: translateX(9%);
 }
